@@ -9,6 +9,7 @@ import (
 	"strconv"
 
 	"github.com/julienschmidt/httprouter"
+	_ "github.com/stretchr/testify"
 )
 
 /**
