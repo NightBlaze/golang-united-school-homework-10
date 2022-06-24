@@ -79,6 +79,6 @@ func headersHandler(w http.ResponseWriter, r *http.Request, _ httprouter.Params)
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
 	w.Header().Set("a+b", strconv.Itoa(a+b))
+	w.WriteHeader(http.StatusOK)
 }
